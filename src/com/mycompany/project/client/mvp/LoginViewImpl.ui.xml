@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
+	xmlns:g='urn:import:com.google.gwt.user.client.ui'>
+	<ui:style>
+		.backgroundPanel 
+		{
+			position: absolute;
+			top: 0px;
+			left:0px;
+			margin-left: auto;
+			margin-right: auto;
+			background-position: center;
+		}
+		
+		.contentFrame
+		{
+			position: relative;
+			top: 200px;
+			left:450px;
+		}
+
+		.label
+		{
+            width: 200px;
+			font-family: Geogia;
+            font-weight:bold;
+            text-align: right;
+        }
+		
+		.button
+		{
+			width: 145px;
+			position: relative;
+			font-family: Geogia;
+            font-weight:bold;
+		}
+
+		.image
+		{
+			position: absolute;
+			top: 0px;
+			left:0px;
+			opacity: 0.55;
+		}
+
+	</ui:style>
+
+	<!-- The following creates an instance of the clientbundle which stores the image -->
+	<ui:with field="res" type="com.mycompany.project.resources.Resources">
+	</ui:with>
+	
+	<g:FlowPanel styleName="{style.backgroundPanel}">
+	    <g:Image styleName="{style.image}" ui:field="bg" resource="{res.getBackground}"> 
+	    </g:Image>
+		
+	    <g:FlowPanel styleName="{style.contentFrame}">
+		    <g:HorizontalPanel>
+		        <g:Label styleName="{style.label}" ui:field="lbUserName" text = "User Name:"></g:Label>
+			    <g:TextBox ui:field="tbUserName"></g:TextBox>
+		    </g:HorizontalPanel>
+		    
+		    <g:HorizontalPanel>
+		        <g:Label styleName="{style.label}" ui:field="lbPassword" text = "Password:"></g:Label>
+		    	<g:PasswordTextBox ui:field="tbPassword"></g:PasswordTextBox>
+		    </g:HorizontalPanel>
+	
+		    <g:HorizontalPanel>
+		        <g:Label styleName="{style.label}" ui:field="placeHolder" text = ""></g:Label>
+		        <g:Button styleName="{style.button}" ui:field="btLogin" text="Login"></g:Button>
+		    </g:HorizontalPanel>
+	    </g:FlowPanel>
+	</g:FlowPanel>
+</ui:UiBinder>

@@ -1,0 +1,130 @@
+@CHARSET "UTF-8";
+
+.popup {
+	/* background: #fff; */
+	background-color: rgb(241, 236, 234);
+	padding: 10px 0;
+	position: relative;
+	zoom: 1;
+	margin-top: 20px;
+	width: 400px;
+	margin-left: 750px;
+}
+
+.upperHalf {
+background: #fff;
+border-bottom: 1px solid #bebebe;
+-moz-box-shadow: 0 2px 4px rgba(0,0,0,.12);
+-o-box-shadow: 0 2px 4px rgba(0,0,0,.12);
+-webkit-box-shadow: 0 2px 4px rgba(0,0,0,.12);
+box-shadow: 0 2px 4px rgba(0,0,0,.12);
+position: relative;
+z-index: 1;
+}
+
+.upperImage{
+display: inline-block;
+line-height: 39px;
+padding-left: 20px;
+margin-top: 10px;
+position: relative;
+width: 50px;
+height: 50px;
+}
+
+.rightUpper {
+display: inline-block;
+margin: 16px 0 10px;
+padding-right: 50px;
+vertical-align: top;
+}
+
+.label {
+color: #000;
+font-weight: bold;
+}
+
+.viewProfileButton{
+background-color: #4d90fe;
+border: 1px solid #3079ed;
+font-weight: bold;
+font-size: 18px;
+color: #fff!important;
+}
+
+.bottomHalf
+{
+border-spacing: 0;
+border: 0;
+margin: 0;
+white-space: nowrap;
+width: 100%;
+}
+
+.logo
+{
+  font-size: 30px;
+  font-weight: bold;
+  font-family: times;
+}
+
+.labelName
+{
+  text-align: right;
+  color: blue;
+  padding-right: 400px;
+  font-size: 20px;
+  font-family: times;
+}
+
+.labelNameInPopup
+{
+  text-align: right;
+  color: blue;
+  padding-right: 200px;
+  font-size: 20px;
+  font-family: times;
+}
+
+.profileTitle
+{
+  text-align: center;
+  color: blue;
+  margin-right: 200px;
+  font-size: 20px;
+  font-family: times;
+}
+
+.viewProfileView_Labels
+{
+	text-align: right;
+	font-weight: bold;
+	font-family: times;
+	font-size: 15px;
+}
+
+@external tr:first-child;
+tr:first-child /*This selects the all tr tags that are the first child of their parents*/
+{
+  font-size: large;
+}
+
+@external table td;
+table td /*This selects all td tags inside tables*/
+{
+	padding-left: 5px;
+	padding-right: 5px;
+	text-align: center;
+}
+
+.myButton{
+	border: 1px solid #3079ed;
+	font-family: Georgia;
+	font-weight: bold;
+	font-size: medium;
+}
+
+.myButton:hover{
+	cursor: hand;
+	cursor: pointer; /*Having both for cross-browser compatibility*/
+}

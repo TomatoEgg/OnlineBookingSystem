@@ -1,0 +1,12 @@
+war/Thumbs.db
+war/*.gif
+war/WEB-INF/classes/
+war/WEB-INF/deploy/
+gwt-unitCache/
+war/*.class
+.gwt/.gwt-log
+!war/com.mycompany.project.BookingSystem/gwt/standard/*.css
+war/com.mycompany.project.BookingSystem/
+src/com/mycompany/project/resources/Thumbs.db
+BookingSystem.war
+war/WEB-INF/lib/BookingSystem.jar
